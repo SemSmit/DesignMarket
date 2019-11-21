@@ -1,1 +1,0 @@
-{"filter":false,"title":".profile","tooltip":"~/.profile","ace":{},"undoManager":{"mark":-1,"position":-1,"stack":[]},"timestamp":1569582521199,"hash":"339acacbab86ae1ebc67ae4ff0e5a398b692b12b"}

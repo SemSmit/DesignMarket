@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from market.home import urls as urls_home
-from market.designs import urls as urls_designs
-from market.request import urls as urls_request
-from market.accounts import urls as urls_accounts
+from home import urls as urls_home
+from designs import urls as urls_designs
+from request import urls as urls_request
+from accounts import urls as urls_accounts
 
 
 urlpatterns = [

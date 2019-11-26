@@ -43,10 +43,10 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'market.request',
     'jquery',
-    'accounts',
-    'cart',
-    'home',
-    'designs',
+    'market.accounts',
+    'market.cart',
+    'market.home',
+    'market.designs',
 ]
 
 MIDDLEWARE = [

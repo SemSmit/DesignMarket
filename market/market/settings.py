@@ -41,12 +41,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_forms_bootstrap',
-    'market.request',
+    'request',
     'jquery',
-    'market.accounts',
-    'market.cart',
-    'market.home',
-    'market.designs',
+    'accounts',
+    'cart',
+    'home',
+    'designs',
 ]
 
 MIDDLEWARE = [

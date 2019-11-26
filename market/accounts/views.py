@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, HttpResponseRedirect
 from django.contrib import messages, auth
 from django.urls import reverse
-from .forms import UserLoginForm, UserRegistrationForm
+from .forms import UserLoginForm, UserRegistrationForm, RoleForm
 from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
 
@@ -55,6 +55,7 @@ def register(request):
     """A view that manages the registration form"""
     if request.method == 'POST':
         user_form = UserRegistrationForm(request.POST)
+        role_form = RoleForm(request.POST)
         if user_form.is_valid():
             user_form.save()
 
@@ -70,6 +71,7 @@ def register(request):
                 messages.error(request, "unable to log you in at this time!")
     else:
         user_form = UserRegistrationForm()
+        role_form = RoleForm()
 
-    args = {'user_form': user_form}
+    args = {'user_form': user_form, 'role_form': role_form,}
     return render(request, 'register.html', args)

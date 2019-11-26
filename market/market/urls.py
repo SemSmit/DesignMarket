@@ -16,11 +16,15 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from home import urls as urls_home
+from designs import urls as urls_designs
+from request import urls as urls_request
 from accounts import urls as urls_accounts
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', include(urls_home)),
+    url(r'^request/$', include(urls_request)),
+    url(r'^designs/$', include(urls_designs)),
     url(r'^accounts/', include(urls_accounts)),
 ]

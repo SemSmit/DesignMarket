@@ -10,6 +10,6 @@ https://docs.djangoproject.com/en/1.11/howto/deployment/wsgi/
 import os
 
 from django.core.wsgi import get_wsgi_application
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "market.market.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "market2.settings")
 
 application = get_wsgi_application()

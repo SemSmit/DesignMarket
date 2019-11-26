@@ -1,1 +1,1 @@
-web: gunicorn market.wsgi:application
+web: gunicorn designmarket.wsgi:application
